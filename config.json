@@ -1,1 +1,23 @@
+{
+  "name": "ios_system_explorer",
+  "version": "1.0.0",
+  "description": "Permet à Gemma de lister les capacités système et de générer des schémas pour de nouveaux outils.",
+  "tools": [
+    {
+      "name": "scan_ios_capabilities",
+      "description": "Récupère la liste des URL Schemes et des Raccourcis disponibles pour automatiser l'iPhone.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "enum": ["media", "productivity", "system", "communication"],
+            "description": "La catégorie de fonctions à explorer."
+          }
+        },
+        "required": ["category"]
+      }
+    }
+  ]
+}
 
